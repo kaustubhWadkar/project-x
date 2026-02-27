@@ -19,7 +19,7 @@ jobs:
             echo " ok u can create"
             mkdir test-folder
             cd ./test-folder
-            print $(pwd)
+            echo $(pwd)
         
   
   
