@@ -8,7 +8,7 @@ jobs:
         run: echo "hello world"
 
       - name: print goodbye
-        run: "done-bye"
+        run: echo "done-bye"
         
   
   
