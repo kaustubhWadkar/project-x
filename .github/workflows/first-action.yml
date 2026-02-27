@@ -9,6 +9,17 @@ jobs:
 
       - name: print goodbye
         run: echo "done-bye"
+
+  second-job:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: create folder
+        run: |
+            echo " hello create foldr"
+            echo " ok u can create"
+            mkdir test-folder
+            cd ./test-folder
+            print $(pwd)
         
   
   
