@@ -11,7 +11,7 @@ jobs:
         run: echo "done-bye"
 
   second-job:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - name: create folder
         run: |
