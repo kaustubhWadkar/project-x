@@ -3,12 +3,14 @@ FROM node:18-alpine AS build
 
 WORKDIR /usr/src/app
 COPY package.json package-lock.json* ./
-RUN npm ci --only=prod
+RUN npm install --only=production
 
 
 COPY index.js ./
 
 FROM node:18-alpine AS runtime
+
+
 
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
