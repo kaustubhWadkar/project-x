@@ -20,6 +20,11 @@ jobs:
             mkdir test-folder
             cd ./test-folder
             echo $(pwd)
+  third-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print date
+        run: echo $(date)
         
   
   
