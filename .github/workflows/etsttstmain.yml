@@ -7,6 +7,13 @@ jobs:
     steps:
       - name: print server osiokkk
         uses: actions/checkout@v3
-        
-        
+      - name: print date
+        run: echo $(date)
+      - name: build docker image
+        run: docker build -t . 
+  push_image:
+   runs-on: ubuntu-22.04
+   steps:
+     - name: Push image to ECR
+       run: echo "pushing image to ECR"
 
