@@ -17,5 +17,10 @@ jobs:
    steps:
      - name: Push image to ECR
        run: echo "pushing image to ECR"
-
+  Scan_image:
+   needs: push_image
+   runs-on: ubuntu-22.04
+   steps:
+     - name: Push image to ECR
+       run: echo "Scan Image "
 
