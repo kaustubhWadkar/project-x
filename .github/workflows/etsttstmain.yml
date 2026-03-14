@@ -12,6 +12,7 @@ jobs:
       - name: build docker image
         run: docker build -t project-x . 
   push_image:
+   needs: build
    runs-on: ubuntu-22.04
    steps:
      - name: Push image to ECR
