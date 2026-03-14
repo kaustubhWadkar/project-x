@@ -10,10 +10,11 @@ jobs:
       - name: print date
         run: echo $(date)
       - name: build docker image
-        run: docker build -t . 
+        run: docker build -t project-x . 
   push_image:
    runs-on: ubuntu-22.04
    steps:
      - name: Push image to ECR
        run: echo "pushing image to ECR"
+
 
