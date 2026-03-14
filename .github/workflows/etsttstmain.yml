@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: print server osiokkk
-        run: cat $(/etc/os-release)
+        uses: actions/checkout@v3
+        
         
 
