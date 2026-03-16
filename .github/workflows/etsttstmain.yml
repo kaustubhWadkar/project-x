@@ -22,5 +22,7 @@ jobs:
    runs-on: ubuntu-22.04
    steps:
      - name: Push image to ECR
-       run: echo "Scan Image "
-
+       run: |
+        echo "Scan Image "
+        echo "Ok we are scaning image"
+       
