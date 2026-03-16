@@ -25,4 +25,10 @@ jobs:
        run: |
         echo "Scan Image "
         echo "Ok we are scaning image"
+  Runner_info:
+   needs: Scan_image
+   runs-on: ubuntu-latest
+   steps:
+     - name: Runneer os 
+       run: echo "{{ runner.os }}"
        
