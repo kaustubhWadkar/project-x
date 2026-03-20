@@ -1,0 +1,17 @@
+name: Demmo Workflow
+on: 
+  pull_request:
+    types: 
+      - opened
+      - closed
+  workflow_dispatch:
+    
+    
+jobs:
+  test-job1:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: print date
+        run: echo $(date)
+
+   
