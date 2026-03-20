@@ -14,6 +14,8 @@ FROM node:18-alpine AS runtime
 
 
 RUN addgroup -S appgroup && adduser -S appuser -G appgroup
+RUN mkdir test
+
 
 WORKDIR /usr/src/app
 
