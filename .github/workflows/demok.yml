@@ -1,12 +1,8 @@
 name: Demmo Workflow
-on: 
-  pull_request:
-    types: 
-      - opened
-      - closed
-  workflow_dispatch:
-    
-    
+on:
+  push:
+    branches:
+      - dev
 jobs:
   test-job1:
     runs-on: ubuntu-22.04

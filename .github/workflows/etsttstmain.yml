@@ -1,5 +1,8 @@
 name: triggerByPush
-on: [push, workflow_dispatch]
+on:
+   push:
+    paths:
+      - 'Dockerfile'
 
 jobs:
   build:
